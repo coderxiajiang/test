@@ -14,7 +14,10 @@ import threeDemo10 from '@/components/threeDemo10-pointCloud'
 import threeDemo11 from '@/components/threeDemo11-fbx'
 import threeDemo12 from '@/components/threeDemo12-fbx-jianbian+kuosan+biankuang+shangshengtiaodai'
 import china3D from '@/components/3d-china-map'
-import technologyCity from '@/components/technology-city'
+import earth from '@/components/earth-textureLoder'
+import dem from '@/components/DEMstretch'
+import openDoor from '@/components/openDoor'
+import fire from '@/components/rain-snow-skyBox-fire-jiantou'
 
 Vue.use(Router)
 
@@ -86,14 +89,29 @@ export default new Router({
       component:threeDemo12
     },
     {
+      path:'/three13',
+      name:'threeDemo13',
+      component:openDoor
+    },
+    {
       path:'/3DChina',
       name:'3DChina',
       component:china3D
     },
     {
-      path:'/City',
-      name:'City',
-      component:technologyCity
+      path:'/earth',
+      name:'earth',
+      component:earth
     },
+    {
+      path:'/dem',
+      name:'dem',
+      component:dem
+    },
+    {
+      path:'/three14',
+      name:'three14',
+      component:fire
+    }
   ]
 })
