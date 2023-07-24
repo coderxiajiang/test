@@ -12,7 +12,8 @@ import threeDemo8 from '@/components/threeDemo8-kuosanbo'
 import threeDemo9 from '@/components/threeDemo9-xuanzhuanlengzhui'
 import threeDemo10 from '@/components/threeDemo10-pointCloud'
 import threeDemo11 from '@/components/threeDemo11-fbx'
-import threeDemo12 from '@/components/threeDemo12-fbx-jianbian+kuosan+biankuang+shangshengtiaodai'
+import threeDemo12 from '@/components/threeDemo12-fbx-jianbian+kuosan+biankuang+shangshengtiaodai+radar'
+import threeDemo15 from '@/components/radar'
 import china3D from '@/components/3d-china-map'
 import earth from '@/components/earth-textureLoder'
 import dem from '@/components/DEMstretch'
@@ -112,6 +113,11 @@ export default new Router({
       path:'/three14',
       name:'three14',
       component:fire
+    },
+    {
+      path:'/three15',
+      name:'three15',
+      component:threeDemo15
     }
   ]
 })
