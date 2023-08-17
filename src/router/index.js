@@ -19,6 +19,8 @@ import earth from '@/components/earth-textureLoder'
 import dem from '@/components/DEMstretch'
 import openDoor from '@/components/openDoor'
 import fire from '@/components/rain-snow-skyBox-fire-jiantou'
+import titles from '@/components/3dtitles'
+import varyCircle from '@/components/varyCircle'
 
 Vue.use(Router)
 
@@ -118,6 +120,16 @@ export default new Router({
       path:'/three15',
       name:'three15',
       component:threeDemo15
+    },
+    {
+      path:'/3dtitles',
+      name:'3dtitles',
+      component:titles
+    },
+    {
+      path:'/varyCircle',
+      name:'varyCircle',
+      component:varyCircle
     }
   ]
 })
