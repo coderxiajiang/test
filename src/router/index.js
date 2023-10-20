@@ -21,6 +21,7 @@ import openDoor from '@/components/openDoor'
 import fire from '@/components/rain-snow-skyBox-fire-jiantou'
 import titles from '@/components/3dtitles'
 import varyCircle from '@/components/varyCircle'
+import mapEngine from '@/components/mapEngine'
 
 Vue.use(Router)
 
@@ -130,6 +131,11 @@ export default new Router({
       path:'/varyCircle',
       name:'varyCircle',
       component:varyCircle
+    },
+    {
+      path:'/mapEngine',
+      name:'mapEngine',
+      component:mapEngine
     }
   ]
 })
